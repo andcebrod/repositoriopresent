@@ -1,6 +1,7 @@
-# Flux 
+# HTTP 
 
-An application architecture for React
+- Presentación del Protocolo HTTP
+- Creada por Andrés Ceballos Rodríguez
 
 ---
 
@@ -13,3 +14,4 @@ An application architecture for React
 ---
 
 ![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+
