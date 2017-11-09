@@ -84,7 +84,6 @@
 
 ---
 
-- Los encabezados se pueden agrupar de acuerdo con sus contextos:
   * Encabezado general : Encabezados que se aplican tanto a las solicitudes como a las respuestas, pero sin relación con los datos que finalmente se transmiten en el cuerpo.
   * Encabezado de solicitud : encabezados que contienen más información sobre el recurso que se va a buscar o sobre el propio cliente.
   * Encabezado de respuesta : Encabezados con información adicional sobre la respuesta.
@@ -140,3 +139,76 @@ Content-Type: text/html <br>
 <!DOCTYPE html... <br>
 
 ---
+
+## Cookies
+
+- Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario.
+- El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor.
+- Se usan generalmente para decirle al servidor que dos peticiones tiene su origen en el mismo navegador web
+- Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
+
+---
+
+- Las cookies se utilizan principalmente con tres propósitos:
+
+ * Gestión de sesiones: Inicios de sesión, carritos de compras, puntajes de juegos o cualquier otra cosa que el servidor deba recordar
+ * Personalización: Preferencias de usuario, temas y otras configuraciones
+ * Rastreo: Grabar y analizar el comportamiento del usuario
+
+---
+
+-  Existen:
+  * Cookies de Sesion: se elimina cuando el cliente se cierra, sin embargo, los navegadores web pueden usar la restauración de sesiones
+  * Cookies permanentes: En lugar de caducar cuando el cliente cierra, las cookies permanentes caducan en una fecha específica ( Expires) o después de un período de tiempo específico ( Max-Age).
+
+---
+
+## Evolución de HTTP
+
+- HTTP es el protocolo en el que se basa la Web. Fue inventado por Tim Berners-Lee entre los años 1989-1991, HTTP ha visto muchos cambios, manteniendo la mayor parte de su simplicidad y desarrollando su flexibilidad.
+- HTTP ha evolucionado, desde un protocolo destinado al intercambio de archivos en un entorno de un laboratorio semi-seguro, al actual laberinto de Internet, sirviendo ahora para el intercambio de imágenes, vídeos en alta resolución y en 3D.
+---
+
+### Invencion del Http:
+- En 1989, Tim Berners-Lee escribió una propuesta para desarrollar un sistema de hipertexto sobre Internet. Desarrollado sobre los protocolos existentes TCP e IP, creo http basado en cuatro bloques:
+* Un formato de texto para representar documentos de hiper-texto.
+* Un protocolo sencillo para el intercambio de esos documentos, HTTP
+* Un cliente que muestre esos documentos. El primer navegador Web.
+* Un servidor para dar acceso a los documentos.
+
+---
+
+### HTTP/0.9 – El protocolo de una sola línea
+
+- HTTP/0.9 es un protocolo extremadamente sencillo:
+  * una petición consiste simplemente en una única linea, que comienza por el único método posible GET, seguido por la dirección del recurso a pedir
+  * Al contrario que sus posteriores evoluciones, el protocolo HTTP/0.9 no usa cabeceras HTTP, con lo cual únicamente es posible transmitir archivos HTML, y ningún otro tipo de archivos.
+
+---
+
+### HTTP/1.0
+
+- Se añade a la línea de la petición GET.
+- Se envía también un código de estado al comienzo de la respuesta, permitiendo así que el navegador pueda responder al éxito o fracaso de la petición realizada, y actuar en consecuencia
+- El concepto de cabeceras de HTTP
+- Gracias a las cabeceras de HTTP, se pudieron transmitir otros documentos además de HTML.
+
+---
+### HTTP/1.1 – El protocolo estándar.
+- HTTP/1.1 aclaró ambigüedades y añadió numerosas mejoras:
+ * Una conexión podía ser reutilizada, ahorrando así el tiempo de re-abrirla.
+ * El enrutamiento se añadió a la especificación, permitiendo realizar una segunda petición de datos antes de que fuera respondida la primera.
+ * Se permitió que las respuestas a peticiones podían ser divididas en sub-partes.
+ * Se añadieron controles adicionales a los mecanismos de gestión de la cache.
+ * La negociación de contenido se añadó a la especificación, permitiendo que servidor y cliente acordasen el contenido más adecuado a intercambiarse.
+ * Gracias a la cabecera, Host, pudo ser posible alojar varios dominios en la misma dirección IP.
+
+ ---
+### HTTP/2
+- El protocolo HTTP/2, tiene notables diferencias fundamentales respecto a la versión anterior HTTP/1.1:
+ * Es un protocolo binario. Así pues no se puede leer directamente, gracias a este cambio es posible utilizar en él técnicas de optimización.
+ * Es un protocolo multiplexado. Peticiones paralelas pueden hacerse sobre la misma connexión
+ * Comprime las cabeceras.
+ * Permite al servidor almacenar datos en la caché del cliente, previamente a que estos sean pedidos, mediante un mecanismo denominado 'server push'.
+
+ ---
