@@ -87,8 +87,8 @@
 - Los encabezados se pueden agrupar de acuerdo con sus contextos:
   * Encabezado general : Encabezados que se aplican tanto a las solicitudes como a las respuestas, pero sin relación con los datos que finalmente se transmiten en el cuerpo.
   * Encabezado de solicitud : encabezados que contienen más información sobre el recurso que se va a buscar o sobre el propio cliente.
-  * Encabezado de respuesta : Encabezados con información adicional sobre la respuesta, como su ubicación o sobre el servidor en sí ).
-  * Encabezado de entidad : Encabezados que contienen más información sobre el cuerpo de la entidad, como su longitud de contenido o su tipo MIME.
+  * Encabezado de respuesta : Encabezados con información adicional sobre la respuesta, como su ubicación o sobre el servidor en sí.
+  * Encabezado de entidad : Encabezados que contienen más información sobre el cuerpo de la entidad.
 
 ---
 
@@ -97,7 +97,7 @@
 - La primera parte, consiste en una linea, que contiene un método, seguido de sus parámetros:
   * la dirección del documento pedido: por ejemplo su URL completa, sin indicar el protocolo o el nombre del dominio.
   * la versión del protocolo HTTP
-- La siguiente parte, está formada por un bloque de líneas consecutivas que representan las cabeceras de la petición HTTP y dan información al servidor sobre que tipo de datos es apropiado u otros datos que modifiquen su comportamiento. 
+- La siguiente parte, está formada por un bloque de líneas consecutivas que representan las cabeceras de la petición HTTP y dan información al servidor sobre que tipo de datos es apropiado u otros datos que modifiquen su comportamiento.
 - La parte final es un bloque de datos opcional, que puede contener más datos para ser usados por el método POST.
 
 ---
