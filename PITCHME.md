@@ -7,9 +7,14 @@
 
 ### Flux Design
 
-- Dispatcher: Manages Data Flow
-- Stores: Handle State & Logic
-- Views: Render Data via React
+- Características del protocolo HTTP
+- Típica Sesión HTTP
+- Cabeceras protocolo HTTP
+- Peticiones HTTP
+- Respuestas HTTP
+- Cookies
+- Evolución de HTTP
+- Características de HTTP 2.0
 
 ---
 
