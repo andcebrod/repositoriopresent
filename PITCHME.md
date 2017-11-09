@@ -5,7 +5,7 @@
 
 ---
 
-### Flux Design
+### Indice
 
 - Características del protocolo HTTP
 - Típica Sesión HTTP
