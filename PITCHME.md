@@ -97,7 +97,7 @@
 - La primera parte, consiste en una linea, que contiene un método, seguido de sus parámetros:
   * la dirección del documento pedido: por ejemplo su URL completa, sin indicar el protocolo o el nombre del dominio.
   * la versión del protocolo HTTP
-- La siguiente parte, está formada por un bloque de líneas consecutivas, que representan las cabeceras de la petición HTTP, y dan información al servidor, sobre que tipo de datos es apropiado  u otros datos que modifiquen su comportamiento. Estas cabeceras HTTP forman un bloque que acaba con una línea en blanco.
+- La siguiente parte, está formada por un bloque de líneas consecutivas que representan las cabeceras de la petición HTTP y dan información al servidor sobre que tipo de datos es apropiado u otros datos que modifiquen su comportamiento. 
 - La parte final es un bloque de datos opcional, que puede contener más datos para ser usados por el método POST.
 
 ---
@@ -116,7 +116,7 @@ Accept-Language: en <br>
  * El método GET hace una petición de un recurso específico. Las peticiones con GET unicamente hacen peticiones de datos.
  * El método POST envía datos al servidor de manera que este pueda cambiar su estado. Este es el método usado normalmente para enviar los datos de un  formulario HTML.
 
- ---
+---
 
 ## Respuesta http
 
