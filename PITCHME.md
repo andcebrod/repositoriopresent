@@ -55,3 +55,87 @@
   * El servidor procesa la petición, y responde con un código de estado y los datos correspondientes.
 
 ---
+### Estableciendo una conexión
+
+- En el protocolo http es siempre el cliente el que establece la conexión.
+- El puerto por defecto para un servidor HTTP es el puerto 80.
+- La URL de la página pedida contiene tanto el nombre del dominio, como el número de puerto, aunque este puede ser omitido, si se trata del puerto 80.
+
+---
+
+### Mandando una petición
+
+- Una vez la conexión está establecida, el cliente, puede mandar una petición de datos.
+- La  petición de datos de un cliente HTTP, consiste en directivas de texto, separadas mediante CRLF
+
+### Respuesta del Servidor
+
+- Después de que el agente de usuario envía su petición, el servidor web lo procesa, y a continuación responde.
+- De forma similar a la petición del servidor, la respuesta del servidor está formada por directivas de texto, separadas por el carácter CRLF, y divida en tres bloques.
+
+---
+
+## Cabeceras protocolo HTTP
+
+- Los encabezados HTTP permiten que el cliente y el servidor pasen información adicional con la solicitud o la respuesta.
+- Un encabezado de solicitud consiste en su nombre insensible a mayúsculas y minúsculas seguido de dos puntos ' :'.
+
+---
+
+- Los encabezados se pueden agrupar de acuerdo con sus contextos:
+* Encabezado general : Encabezados que se aplican tanto a las solicitudes como a las respuestas, pero sin relación con los datos que finalmente se transmiten en el cuerpo.
+* Encabezado de solicitud : encabezados que contienen más información sobre el recurso que se va a buscar o sobre el propio cliente.
+* Encabezado de respuesta : Encabezados con información adicional sobre la respuesta, como su ubicación o sobre el servidor en sí (nombre y versión, etc.).
+* Encabezado de entidad : Encabezados que contienen más información sobre el cuerpo de la entidad, como su longitud de contenido o su tipo MIME.
+
+---
+
+## Peticiones http
+
+- La primera parte, consiste en una linea, que contiene un método, seguido de sus parámetros:
+* la dirección del documento pedido: por ejemplo su URL completa, sin indicar el protocolo o el nombre del dominio.
+* la versión del protocolo HTTP
+- La siguiente parte, está formada por un bloque de líneas consecutivas, que representan las cabeceras de la petición HTTP, y dan información al servidor, sobre que tipo de datos es apropiado  u otros datos que modifiquen su comportamiento. Estas cabeceras HTTP forman un bloque que acaba con una línea en blanco.
+- La parte final es un bloque de datos opcional, que puede contener más datos para ser usados por el método POST.
+
+---
+
+### Ejemplo de peticiones :
+
+GET / HTTP/1.1
+Host: www.google.com
+Accept-Language: en
+
+---
+
+### Metodos de peticiones
+
+- La peticiones más comunes son  GET y POST:
+ * El método GET hace una petición de un recurso específico. Las peticiones con GET unicamente hacen peticiones de datos.
+ * El método POST envía datos al servidor de manera que este pueda cambiar su estado. Este es el método usado normalmente para enviar los datos de un  formulario HTML.
+
+ ---
+
+## Respuesta http
+
+- La primera línea, es la línea de estado, que consiste en una confirmación del la versión de HTTP utilizado, y seguido por el estado de la petición.
+- Las líneas siguientes representan cabeceras de HTTP concretas, dando al cliente información sobre los datos enviado.
+  * Al igual que las cabeceras HTTP de la petición de un cliente, las cabeceras HTTP del servidor, finalizan con una línea vacía.
+- El bloque final, es el bloque que puede contener opcionalmente los datos.
+
+---
+
+### Ejemplo de respuesta:
+
+HTTP/1.1 200 OK
+Date: Mon, 12 Dec 2017 15:48:00 GMT
+Server: Apache
+Last-Modified: Tue, 01 Dec 2017 20:18:22 GMT
+ETag: "78132bs1-7449-465bk75b28v17"
+Accept-Ranges: bytes
+Content-Length: 30218
+Content-Type: text/html
+
+<!DOCTYPE html...
+
+---
