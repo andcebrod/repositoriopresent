@@ -50,8 +50,8 @@
 
 ## Típica Sesión HTTP
 - Una sesión en el protocolo HTTP consta de 3 fases:
-* El cliente establece una conexión TCP
-* El cliente manda su petición, y espera por la respuesta.
-* El servidor procesa la petición, y responde con un código de estado y los datos correspondientes.
+  *  El cliente establece una conexión TCP
+  * El cliente manda su petición, y espera por la respuesta.
+  * El servidor procesa la petición, y responde con un código de estado y los datos correspondientes.
 
 ---
