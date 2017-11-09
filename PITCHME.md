@@ -96,6 +96,7 @@
 - La primera parte, consiste en una linea, que contiene un método, seguido de sus parámetros:
   * la dirección del documento pedido: por ejemplo su URL completa, sin indicar el protocolo o el nombre del dominio.
   * la versión del protocolo HTTP
+---
 - La siguiente parte, está formada por un bloque de líneas consecutivas que representan las cabeceras de la petición HTTP y dan información al servidor sobre que tipo de datos es apropiado u otros datos que modifiquen su comportamiento.
 - La parte final es un bloque de datos opcional, que puede contener más datos para ser usados por el método POST.
 
@@ -144,6 +145,7 @@ Content-Type: text/html <br>
 
 - Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario.
 - El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor.
+---
 - Se usan generalmente para decirle al servidor que dos peticiones tiene su origen en el mismo navegador web
 - Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
 
@@ -199,6 +201,9 @@ Content-Type: text/html <br>
  * Una conexión podía ser reutilizada, ahorrando así el tiempo de re-abrirla.
  * El enrutamiento se añadió a la especificación, permitiendo realizar una segunda petición de datos antes de que fuera respondida la primera.
  * Se permitió que las respuestas a peticiones podían ser divididas en sub-partes.
+
+---
+
  * Se añadieron controles adicionales a los mecanismos de gestión de la cache.
  * La negociación de contenido se añadó a la especificación, permitiendo que servidor y cliente acordasen el contenido más adecuado a intercambiarse.
  * Gracias a la cabecera, Host, pudo ser posible alojar varios dominios en la misma dirección IP.
