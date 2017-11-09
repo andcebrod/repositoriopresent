@@ -68,6 +68,8 @@
 - Una vez la conexión está establecida, el cliente, puede mandar una petición de datos.
 - La  petición de datos de un cliente HTTP, consiste en directivas de texto, separadas mediante CRLF
 
+---
+
 ### Respuesta del Servidor
 
 - Después de que el agente de usuario envía su petición, el servidor web lo procesa, y a continuación responde.
@@ -83,18 +85,18 @@
 ---
 
 - Los encabezados se pueden agrupar de acuerdo con sus contextos:
-* Encabezado general : Encabezados que se aplican tanto a las solicitudes como a las respuestas, pero sin relación con los datos que finalmente se transmiten en el cuerpo.
-* Encabezado de solicitud : encabezados que contienen más información sobre el recurso que se va a buscar o sobre el propio cliente.
-* Encabezado de respuesta : Encabezados con información adicional sobre la respuesta, como su ubicación o sobre el servidor en sí (nombre y versión, etc.).
-* Encabezado de entidad : Encabezados que contienen más información sobre el cuerpo de la entidad, como su longitud de contenido o su tipo MIME.
+  * Encabezado general : Encabezados que se aplican tanto a las solicitudes como a las respuestas, pero sin relación con los datos que finalmente se transmiten en el cuerpo.
+  * Encabezado de solicitud : encabezados que contienen más información sobre el recurso que se va a buscar o sobre el propio cliente.
+  * Encabezado de respuesta : Encabezados con información adicional sobre la respuesta, como su ubicación o sobre el servidor en sí ).
+  * Encabezado de entidad : Encabezados que contienen más información sobre el cuerpo de la entidad, como su longitud de contenido o su tipo MIME.
 
 ---
 
 ## Peticiones http
 
 - La primera parte, consiste en una linea, que contiene un método, seguido de sus parámetros:
-* la dirección del documento pedido: por ejemplo su URL completa, sin indicar el protocolo o el nombre del dominio.
-* la versión del protocolo HTTP
+  * la dirección del documento pedido: por ejemplo su URL completa, sin indicar el protocolo o el nombre del dominio.
+  * la versión del protocolo HTTP
 - La siguiente parte, está formada por un bloque de líneas consecutivas, que representan las cabeceras de la petición HTTP, y dan información al servidor, sobre que tipo de datos es apropiado  u otros datos que modifiquen su comportamiento. Estas cabeceras HTTP forman un bloque que acaba con una línea en blanco.
 - La parte final es un bloque de datos opcional, que puede contener más datos para ser usados por el método POST.
 
@@ -102,9 +104,9 @@
 
 ### Ejemplo de peticiones :
 
-GET / HTTP/1.1
-Host: www.google.com
-Accept-Language: en
+GET / HTTP/1.1 <br>
+Host: www.google.com <br>
+Accept-Language: en <br>
 
 ---
 
@@ -127,15 +129,14 @@ Accept-Language: en
 
 ### Ejemplo de respuesta:
 
-HTTP/1.1 200 OK
-Date: Mon, 12 Dec 2017 15:48:00 GMT
-Server: Apache
-Last-Modified: Tue, 01 Dec 2017 20:18:22 GMT
-ETag: "78132bs1-7449-465bk75b28v17"
-Accept-Ranges: bytes
-Content-Length: 30218
-Content-Type: text/html
-
-<!DOCTYPE html...
+HTTP/1.1 200 OK <br>
+Date: Mon, 12 Dec 2017 15:48:00 GMT <br>
+Server: Apache <br>
+Last-Modified: Tue, 01 Dec 2017 20:18:22 GMT <br>
+ETag: "78132bs1-7449-465bk75b28v17" <br>
+Accept-Ranges: bytes <br>
+Content-Length: 30218 <br>
+Content-Type: text/html <br>
+<!DOCTYPE html... <br>
 
 ---
