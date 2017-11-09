@@ -87,7 +87,7 @@
 - Los encabezados se pueden agrupar de acuerdo con sus contextos:
   * Encabezado general : Encabezados que se aplican tanto a las solicitudes como a las respuestas, pero sin relación con los datos que finalmente se transmiten en el cuerpo.
   * Encabezado de solicitud : encabezados que contienen más información sobre el recurso que se va a buscar o sobre el propio cliente.
-  * Encabezado de respuesta : Encabezados con información adicional sobre la respuesta, como su ubicación o sobre el servidor en sí.
+  * Encabezado de respuesta : Encabezados con información adicional sobre la respuesta.
   * Encabezado de entidad : Encabezados que contienen más información sobre el cuerpo de la entidad.
 
 ---
