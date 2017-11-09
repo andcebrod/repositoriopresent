@@ -208,7 +208,8 @@ Content-Type: text/html <br>
  * La negociación de contenido se añadó a la especificación, permitiendo que servidor y cliente acordasen el contenido más adecuado a intercambiarse.
  * Gracias a la cabecera, Host, pudo ser posible alojar varios dominios en la misma dirección IP.
 
- ---
+---
+
 ### HTTP/2
 - El protocolo HTTP/2, tiene notables diferencias fundamentales respecto a la versión anterior HTTP/1.1:
  * Es un protocolo binario. Así pues no se puede leer directamente, gracias a este cambio es posible utilizar en él técnicas de optimización.
