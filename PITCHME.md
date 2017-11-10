@@ -215,9 +215,9 @@ Content-Type: text/html <br>
  * Es un protocolo binario. Así pues no se puede leer directamente, gracias a este cambio es posible utilizar en él técnicas de optimización.
  * Es un protocolo multiplexado. Peticiones paralelas pueden hacerse sobre la misma connexión
  * Comprime las cabeceras.
- ---
+---
  * Permite al servidor almacenar datos en la caché del cliente, previamente a que estos sean pedidos, mediante un mecanismo denominado 'server push'.
 
- ---
+---
 
 # FIN
